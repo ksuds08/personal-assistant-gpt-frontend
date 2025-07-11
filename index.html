@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Personal Assistant GPT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>html,body{height:100%}</style>
+</head>
+<body class="h-full flex flex-col bg-gray-50">
+  <header class="p-4 bg-indigo-600 text-white text-xl font-semibold">
+    Personal Assistant GPT
+  </header>
+
+  <main id="chat" class="flex-1 overflow-y-auto p-4 space-y-4"></main>
+
+  <form id="form" class="p-4 bg-white flex gap-2 shadow">
+    <input id="input" class="flex-1 border rounded px-3 py-2" placeholder="Type a message…" autocomplete="off" />
+    <button class="bg-indigo-600 text-white px-4 py-2 rounded">Send</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
